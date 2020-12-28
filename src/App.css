@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+#container {
+  height: 100vh;
+  display: grid;
+  background-color: rgb(49, 47, 47);
+  grid-template-rows: 1fr 33fr;
+  grid-template-areas:
+    "h"
+    "c";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head {
+  display: grid;
+  grid-area: h;
+  grid-template-columns: 1fr 1fr 10fr;
+  grid-template-areas: "a g b";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  display: grid;
+  grid-area: c;
+  padding-top: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.landingTitle {
+  display: grid;
   color: white;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.users {
+  display: grid;
+  text-decoration: none;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user {
+  margin: 15px;
+  display: grid;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  align-content: center;
+  border-radius: 4px;
+  margin-top: 50px;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: center;
+}
+
+.mainLinks {
+  display: grid;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+}
+
+.logo {
+  display: grid;
+  justify-self: end;
+  color: rgb(0, 225, 255);
+  padding: 15px;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+}
+
+#blue {
+  background-color: #108eb4;
+}
+
+#yellow {
+  background-color: rgb(206, 163, 21);
+}
+
+#green {
+  background-color: rgb(68, 172, 68);
+}
+
+#red {
+  background-color: rgb(187, 68, 68);
+}
+
+#search-input {
+  margin-left: 15px;
+  padding: 5px;
+  width: 150px;
+  background-color: rgb(49, 47, 47);
+}
+
+.search-header {
+  color: white;
+  font-family: "Righteous", cursive;
+  display: grid;
+  grid-template-areas: "i d";
+}
+
+#budget {
+  display: grid;
+  justify-self: end;
+  padding-right: 15px;
+}
+
+.catalogContent {
+  padding: 15px;
+  color: white;
+  font-family: "Righteous", cursive;
+}
+
+.movieWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+.movieImg {
+  width: 100;
+  height: 100px;
+  margin: 15px;
+  display: grid;
+  text-align: center;
+  margin-top: 50px;
+  grid-template-areas:
+  "z"
+}
+
+.btn{
+  display: grid;
+  grid-area: z;
+}
+
+.movieDetail{
+  display: grid;
+  justify-items: center;
 }
